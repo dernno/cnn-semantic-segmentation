@@ -1,1 +1,32 @@
-# cnn-segmantic-segmentation
+# CNN-Based Semantic Segmentation of Gland Structures in Biomedical Images
+
+This project focuses on semantic segmentation of biomedical images, specifically identifying **glandular structures** at the **pixel level**. Rather than classifying entire images, the models perform **binary segmentation**, labeling each pixel as either **"gland"** or **"non-gland"**.
+
+## Loss Functions
+
+Two different loss functions are implemented and can be used interchangeably:
+
+- `torch.nn.BCEWithLogitsLoss()` – standard binary cross-entropy loss with logits  
+- `monai.losses.DiceCELoss` – combined Dice and Cross-Entropy loss from MONAI, useful for imbalanced data
+
+## Architectures
+
+Multiple CNN-based architectures are available for experimentation:
+
+- **Base CNN** – a simple convolutional encoder-decoder structure  
+- **U-Net** – with skip connections between encoder and decoder blocks at different levels to preserve spatial information  
+- **ResNet-based model** – using residual connections to enable deeper networks and improve gradient flow
+
+These variations allow comparison of performance across different architectural designs.
+
+## Evaluation & Visualization
+
+The segmentation performance is evaluated using **Dice score**.  
+After training, the **best and worst segmentation results** (based on Dice score) from the **last 12 epochs** are visualized.  
+It is observed that all networks tend to struggle more with **darker images**, leading to lower segmentation accuracy in those cases.
+
+
+## Dataset
+
+This project uses a selected and pre-processed subset of the **Warwick-QU dataset**, originally released as part of the **MICCAI 2015 GlaS (Gland Segmentation) Challenge**. More information and the original dataset can be found at:  
+[https://warwick.ac.uk/fac/sci/dcs/research/tia/glascontest/download/](https://warwick.ac.uk/fac/sci/dcs/research/tia/glascontest/download/)
