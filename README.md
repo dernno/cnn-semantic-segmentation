@@ -5,7 +5,7 @@ This project focuses on semantic segmentation of biomedical images, specifically
 Two different loss functions are implemented and can be used interchangeably:
 
 - `torch.nn.BCEWithLogitsLoss()` – standard binary cross-entropy loss with logits  
-- `monai.losses.DiceCELoss` – combined Dice and Cross-Entropy loss from MONAI, useful for imbalanced data
+- `monai.losses.DiceCELoss` – combined Dice and Cross-Entropy loss from MONAI
 
 ## Architectures
 
