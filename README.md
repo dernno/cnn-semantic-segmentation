@@ -22,11 +22,14 @@ These variations allow comparison of performance across different architectural 
 ## Evaluation & Visualization
 
 The segmentation performance is evaluated using **Dice score**.  
+
+<img width="999" height="410" alt="Image" src="https://github.com/user-attachments/assets/d4f10d19-0ca6-4aec-9425-9884c0be4a7c" />
+
+
 After training, the **best and worst segmentation results** (based on Dice score) from the **last 12 epochs** are visualized.  
 It is observed that all networks tend to struggle more with **darker images**, leading to lower segmentation accuracy in those cases.
 <img width="950" height="350" alt="Image" src="https://github.com/user-attachments/assets/f4c54a3b-1ac1-498c-b273-8099f3976944" />
 <img width="950" height="350" alt="Image" src="https://github.com/user-attachments/assets/fa1fa442-ce3d-48ea-8c24-fda9a8f38396" />
-<img width="999" height="410" alt="Image" src="https://github.com/user-attachments/assets/d4f10d19-0ca6-4aec-9425-9884c0be4a7c" />
 
 ## Dataset
 
