@@ -11,7 +11,7 @@ Two different loss functions are implemented and can be used interchangeably:
 
 Multiple CNN-based architectures are available for experimentation:
 
-- **Base CNN** – a simple convolutional encoder-decoder network for binary pixel-wise classification (sigmoid), using downsampling via max pooling and upsampling via transposed convolutions. 
+- **Base CNN** – a simple convolutional encoder-decoder network for binary pixel-wise classification (sigmoid), using downsampling via max pooling and upsampling via transposed convolutions 
 - **U-Net** – with skip connections between encoder and decoder blocks at different levels to preserve spatial information  
 - **ResNet-based model** – using residual connections to enable deeper networks and improve gradient flow
 
