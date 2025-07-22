@@ -25,8 +25,8 @@ These variations allow comparison of performance across different architectural 
 
 ## Evaluation & Visualization
 
-The segmentation performance is evaluated using **Dice score**. After training, the **best and worst segmentation results** (based on Dice score) from the **last 12 epochs** are visualized.  
-It is observed that all networks tend to struggle more with **darker images**, leading to lower segmentation accuracy in those cases.
+The segmentation performance is evaluated using **Dice score**. After training, the **best and worst segmentation results** (based on Dice score) from the **last 12 epochs** are visualized.  It is observed that all networks tend to struggle more with **darker images**, leading to lower segmentation accuracy in those cases.
+
 <img width="950" height="350" alt="Image" src="https://github.com/user-attachments/assets/f4c54a3b-1ac1-498c-b273-8099f3976944" />
 <img width="950" height="350" alt="Image" src="https://github.com/user-attachments/assets/fa1fa442-ce3d-48ea-8c24-fda9a8f38396" />
 
